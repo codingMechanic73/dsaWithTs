@@ -29,17 +29,18 @@ export const generateFizzBuzz = (n: number) => {
  * @param n array length
  * @returns FizzBuzz array
  */
-export const generateFizzBuzzWithReduce = (n: number) => {
+export const generateFizzBuzzWithMap = (n: number) => {
     return Array.from({length: n}).map((_, index) => {
-        if (index % 15 == 0) {
+        const value = index + 1;
+        if (value % 15 == 0) {
             return "FizzBuzz";
         }
-        if (index % 3 == 0) {
+        if (value % 3 == 0) {
             return "Fizz";
         }
-        if (index % 5 == 0) {
+        if (value % 5 == 0) {
             return "Buzz";
         }
-        return index.toString();
+        return value.toString();
     });
 }

@@ -1,4 +1,4 @@
-import { generateFizzBuzz } from "../../src/fizzbuzz/fizzbuzz";
+import { generateFizzBuzz, generateFizzBuzzWithMap } from "../../src/fizzbuzz/fizzbuzz";
 
 describe("Test fizzbuzz", () => {
     it("should generate fizzbuzz array", () => {
@@ -6,6 +6,6 @@ describe("Test fizzbuzz", () => {
     });
 
     it("should generate fizzbuzz array using map", () => {
-        expect(generateFizzBuzz(5)).toStrictEqual(["1", "2", "Fizz", "4", "Buzz"]);
+        expect(generateFizzBuzzWithMap(5)).toStrictEqual(["1", "2", "Fizz", "4", "Buzz"]);
     });
 })
